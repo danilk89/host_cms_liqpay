@@ -1,17 +1,14 @@
 <?php
-// Номер роставьте свой
+// Номер поставьте свой
 class Shop_Payment_System_Handler41 extends Shop_Payment_System_Handler 
 {
 	
-	/**
-	 * Метод, запускающий выполнение обработчика
-	 */
-	private $merchant_id='i8349114177';
+	private $merchant_id='i8349114177'; // введите данные аккаунта liqpay
 	private $signature="XFXBKtVRGNKlyappjJUylZGjHFwDQ2zBCK2VH3J";
 	private $method='card';
 
 	public $_rub_currency_id = 1;
-	private $handler_url = 'http://filo-rosso.ru/shop/cart/';
+	private $handler_url = 'http://(ваш_домен)/shop/cart/';
 
 	function execute()
 	{
